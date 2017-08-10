@@ -1,0 +1,287 @@
+<!-- Welcome to CodeStart. It's coded on codepen.io in HTML/CSS, using the W3-CSS framework, because I wanted to try it out, and there are two JS functions. The technical goal: create a lightweight webapp that doesn't demand much data-use, can be opened on any smart phone, is responsive to all screen sizes. The app has links to online tutorials that anyone can learn from, and for each, I've added some context.  The tutorials are in order, kind of, to solve the "where do I start first, and where do I go next?" problem. This is a first draft, please send feedback to miriam5000@gmail.com.
+
+Challenge, change from w3 to flexbox -->
+
+<html lang="en">
+<head>
+    <title>CodeStart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body class="w3-mobile w3-row">
+  
+  <!--Header/welcome--> 
+  <div class="intro w3-container w3-indigo w3-padding">
+    
+      <h1 class="w3-text-bold">CodeStart </h1>
+      <h3>Dear Everyone, <br><br>Want to code and not quite sure how to start? Welcome to CodeStart: a path through the online code tutorials. Most are free. The ones that aren't have a free starter section. Finish one, try the next and above all: don't stop when it gets hard. Good luck. <br><br>You got this, 
+    <br>
+        <a href="#miriam">Miriam</a> </h3>
+  </div> 
+    
+<!-- Toggle buttons -- for info on coding concepts and local orgs  -->
+  
+  <div class="w3-container w3-padding w3-center" id="basics">
+    
+    <button onclick="toggleBasics()" class="w3-btn w3-black 50%">Before you start, some basics.</button>
+
+			  <div id="buttonBasics" class="w3-hide">
+          <p>There are five basic elements in computing. They'll come up in all the tutorials and it can help to know about them before you start.</p>
+          <p>Loops let you repeat pieces of programs forever, until something changes or for a certain number of times. Conditionals are if-then statements. Functions are like the engine. They're how you tell the program what to do. Each computing language comes with functions, and you can define your own functions, too. </p>
+          <p>Loops, conditionals and functions. That's three. Then there are variables. This one can be tough for beginners -- variables are like storage spaces for a piece of data. Imagine a bus. It picks up a passenger, and drops her off somewhere. Then the passenger gets in a train. And the bus picks up someone else. Variables hold something till you need it, or want to change it. Variables hold one item at a time. Lists, also called arrays, hold more than one thing. (And if you have lots of info, you'll probably need a data base; that comes later). Oh, and libraries. Just like book libraries, they're collections of functions you can call up, so you don't have to write your own. </p>
+   
+    
+    
+    <div class="w3-container" id="0 code-studio">
+        <div class="w3-card-4" style="width:100%">
+  	        <div class="w3-container w3-center">
+              <h3>Learn the Basics</h3>
+    	        <a href=" https://studio.code.org/" target="_blank">
+              <img border="0" alt="Code studio logo" src="http://res.cloudinary.com/tech-stories/image/upload/v1495852383/Screen_Shot_2017-05-26_at_10.32.22_PM_ktmzsb.png" width="100" height="100">
+</a>
+	          </div>
+            <div class="w3-container w3-center">   
+                <div class="w3-section">
+                    <button class="w3-button w3-green"><a href="https://studio.code.org/" target="_blank">Code Studio</a></button>
+                </div>                                                                       
+            </div>
+        </div>
+      </div>  
+    </div>
+ </div>
+    
+  
+ 
+<div class="w3-container w3-center" id="adult-teach">
+     
+   <button onclick="toggleBasics1()" class="w3-btn w3-green">Want adults to teach you and your friends?</button>
+
+			<div id="adultsTeach" class="w3-hide">
+        <p> Show them to <a href="www.techgirlz.org/ ">TechGirlz</a> which has lessons that teachers, librarians and other adults in your neighborhood can teach to you and your friends. Need more? Try Code.org's <a href="https://code.org/educate/professional-development-online">teacher pages</a> or Google's <a href="https://www.cs-first.com/en/start-club">
+CS-First Club</a>.</p> 
+      </div>
+  </div>
+ 
+ <!-- Boxes with links to online tutorials. Note: check responsiveness -->  
+           
+<div class="w3-container w3-padding-32" id="1 scratch">
+  <div class="w3-card-4" style="width:100%">
+  	<div class="w3-container w3-center">
+        <h3>Scratch.org</h3>
+    	<a href="https://scratch.mit.edu/" target="_blank">
+<img border="0" alt="Scratch cat" src="http://res.cloudinary.com/tech-stories/image/upload/v1495835489/Screen_Shot_2017-05-26_at_5.51.05_PM_fg9psg.png" width="100" height="100">
+</a>
+	  </div>
+    <div class="w3-container w3-center">
+      <p>Scratch uses colorful blocks to build code.Start with the step-by-step tutorials (look for the ? along the right side). Take your time. There's so much you can do and learn on Scratch. (Works on laptops and desktops, but not on phones and tablets.)</p>
+    
+      <div class="w3-section">
+        <button class="w3-button w3-green"><a href="https://scratch.mit.edu/" target="_blank">Code with Scratch</a></button>
+      </div>                               
+    </div>
+  </div>
+</div>
+    
+ 
+ <!-- Hour of Code -->      
+ <div class="w3-container w3-padding-32" id="2 hour-of-code">
+    <div class="w3-card-4" style="width:100%">
+  	    <div class="w3-container w3-center">
+            <h3>Hour of Code</h3>
+    	        <a href="https://hourofcode.com/us/learn" target="_blank"><img border="0" alt="Hour of Code logo" src="http://res.cloudinary.com/tech-stories/image/upload/v1495838090/Screen_Shot_2017-05-26_at_6.34.21_PM_iebqi1.png" width="100" height="100">
+              </a>
+	      </div>
+        <div class="w3-container w3-center">
+          <p>Hour of Code has many short lessons, in different languages. Start anywhere. The goal? Get comfortable. Use block-coding, or click to see the text-code underneath. Feel how a program thinks and builds with code. How many can you do?
+          </p>
+        <div class="w3-section">
+          <button class="w3-button w3-green"><a href="https://hourofcode.com/us/learn" target="_blank">Try Hour of Code</a>
+          </button>
+        </div> 
+      </div>
+  </div>
+</div>                                                                   
+                                                                             
+<!--Code Combat  -->         
+ <div class="w3-container w3-padding-32" id="3 code-combat">
+    <div class="w3-card-4" style="width:100%">
+  	  <div class="w3-container w3-center">
+          <h3>Code Combat</h3>
+    	    <a href="https://codecombat.com/play" target="_blank">
+<img border="0" alt="Code combat logo" src="http://res.cloudinary.com/tech-stories/image/upload/v1495837257/Screen_Shot_2017-05-26_at_6.20.30_PM_drdogo.png" width="100" height="100">
+          </a>
+	    </div>
+      <div class="w3-container w3-center">
+          <p>Code Combat is a fantasy game where you move through by coding answers. The first levels are free, and then they ask you to pay. Ask your school to buy it for everyone. 
+          </p>
+    
+        <div class="w3-section">
+          <button class="w3-button w3-green"><a href="https://codecombat.com/play" target="_blank">Code Combat</a> 
+          </button>
+        </div> 
+     </div>
+  </div>
+</div>                                                                   
+         
+<!--Code Monkey -->      
+<div class="w3-container w3-padding-32" id="4 code-monkey">
+  <div class="w3-card-4" style="width:100%">
+  	<div class="w3-container w3-center">
+        <h3>Code Monkey</h3>
+    	    <a href="https://www.playcodemonkey.com/" target="_blank"><img border="0" alt="code monkey" src="http://res.cloudinary.com/tech-stories/image/upload/v1495839770/Screen_Shot_2017-05-26_at_7.02.24_PM_t5t1hv.png" width="100" height="100">
+          </a>
+	  </div>
+    <div class="w3-container w3-center">
+      <p>CodeMonkey uses CoffeeScript, which is a junior version of JavaScript. There's a free version and a paid version, which I recommend, if you can. Find it at playcodemonkey.com.
+         </p>
+    
+        <div class="w3-section">
+          <button class="w3-button w3-green"><a href="https://www.playcodemonkey.com/" target="_blank">Code with CodeMonkey</a>
+          </button>
+        </div>                           
+      </div>
+  </div>
+</div>  
+    
+  
+ <!--Hour of Python  https://hourofpython.com/-->      
+<div class="w3-container w3-padding-32" id="5 hour-of-python">
+  <div class="w3-card-4" style="width:100%">
+  	<div class="w3-container w3-center">
+        <h3>Hour of Python</h3>
+    	    <a href="https://hourofpython.com/" target="_blank"><img border="0" alt="Python logo" src="http://res.cloudinary.com/tech-stories/image/upload/v1495849279/Screen_Shot_2017-05-26_at_9.41.00_PM_xaf2nl.png" width="100" height="100">
+          </a>
+	  </div>
+    <div class="w3-container w3-center">
+      <p>It's not a snake, it's a coding language. These lessons from trinket.io get you started in Python, a back-end language that powers about 1/3 of the internet. Offered by trinket.io, which has other languages to explore, too. Big plus: trinket.io works on all devices, even your smartphone.
+       </p>
+    
+     <div class="w3-section">
+        <button class="w3-button w3-green"><a href="https://hourofpython.com/" target="_blank">Try Python</a>
+        </button>
+     </div>                          
+    </div>
+  </div>
+</div>  
+ 
+ 
+          <!-- Kahn Academy mention which classes, and more about langauges of the browser -->  
+          
+<div class="w3-container w3-padding-32" id="6 khan-HTML-CSS-JavaScript">
+  <div class="w3-card-4" style="width:100%">
+  	<div class="w3-container w3-center">
+        <h3>Khan Academy</h3>
+    	    <a href="https://www.khanacademy.org/computing/computer-programming" target="_blank"><img border="0" alt="XXXX" src="http://res.cloudinary.com/tech-stories/image/upload/v1495849139/Screen_Shot_2017-05-26_at_9.38.42_PM_axjhp2.png" width="100" height="100">
+          </a>
+	  </div>
+    <div class="w3-container w3-center">
+      <p>Most websites are built from HTML, CSS and JavaScript. Why three languages? HTML gives structure. CSS gives style. JavaScript makes it do things. Try the lessons in JS: Drawing & Animation, and Intro to HTML/CSS: Making webpages, and Advanced JS: Games & Visualizations.
+      </p>
+      <div class="w3-section">
+        <button class="w3-button w3-green"><a href="https://www.khanacademy.org/computing/computer-programming" target="_blank">Website languages</a>
+         </button>
+      </div>        
+    </div>
+  </div>
+</div>  
+
+ <!--*****Should I put GA'Dash here-- more on website making? -->  
+       
+<div class="w3-container w3-padding-32" id="Dash-HTML-CSS-JavaScript">
+  <div class="w3-card-4" style="width:100%">
+  	<div class="w3-container w3-center">
+        <h3>Dash</h3>
+    	<a href="https://www.khanacademy.org/computing/computer-programming" target="_blank">
+<img border="0" alt="Dash" src="http://res.cloudinary.com/tech-stories/image/upload/v1495852982/Screen_Shot_2017-05-26_at_10.41.47_PM_dzmig2.png" width="100" height="100">
+</a>
+	  </div>
+    <div class="w3-container w3-center">
+      <p>Want to learn more about making websites and web apps? Code and design webpages with these four lessons from Dash.</p>
+    
+      <div class="w3-section">
+        <button class="w3-button w3-green"><a href="https://dash.generalassemb.ly/projects" target="_blank">Dash...</a></button>
+      </div>        
+    </div>
+  </div>
+</div>  
+  
+   <!--Google CS-First -->      
+<div class="w3-container w3-padding-32" id="google-cs-first">
+  <div class="w3-card-4" style="width:100%">
+  	<div class="w3-container w3-center">
+        <h3>Google CS First</h3>
+    	<a href="https://www.cs-first.com" target="_blank">
+<img border="0" alt="Google Computer Science First" src="http://res.cloudinary.com/tech-stories/image/upload/v1496020290/Screen_Shot_2017-05-28_at_7.23.10_PM_agtblf.png" width="100" height="100">
+</a>
+	  </div>
+    <div class="w3-container w3-center">
+      <p>Google has many lessons, and you can pick from categories like art, music, animation, sports and storytelling. There's also a full class that you can teach yourself, or ask your teachers and school to offer.</p>
+    
+      <div class="w3-section">
+        <button class="w3-button w3-green"><a href="https://www.cs-first.com" target="_blank">Explore</a></button>
+      </div>        
+    </div>
+  </div>
+</div>  
+      
+    <!--Apps-- should I make several cards for them? -->      
+<div class="w3-container w3-padding-32" id="7 app-lab">
+  <div class="w3-card-4" style="width:100%">
+  	<div class="w3-container w3-center">
+        <h3>Make an App</h3>
+    	<a href="http://appinventor.mit.edu/explore/ai2/tutorials" target="_blank">
+<img border="0" alt="app inventor logo" src="http://res.cloudinary.com/tech-stories/image/upload/v1495850911/Screen_Shot_2017-05-26_at_10.08.03_PM_e3wh79.png" width="100" height="100">
+</a>
+	  </div>
+    <div class="w3-container w3-center">
+      <p>On AppInventor you can design and code an Android app. Definitely watch and code along with the video tutorials.</p>
+    
+      <div class="w3-section">
+        <button class="w3-button w3-green"><a href="http://appinventor.mit.edu/explore/ai2/tutorials" target="_blank">Make an App</a></button>
+      </div>        
+    </div>
+  </div>
+</div>  
+  
+    <!--Kahn Academy mention which classes, and more about langauges of the browser -->      
+<div class="w3-container w3-padding-32" id="8 code-academy">
+  <div class="w3-card-4" style="width:100%">
+  	<div class="w3-container w3-center">
+        <h3>Codeacademy</h3>
+    	<a href="http://res.cloudinary.com/tech-stories/image/upload/v1495851420/Screen_Shot_2017-05-26_at_10.16.37_PM_e0ixzw.png" target="_blank">
+<img border="0" alt="code logo" src="http://res.cloudinary.com/tech-stories/image/upload/v1495851420/Screen_Shot_2017-05-26_at_10.16.37_PM_e0ixzw.png" width="100" height="100">
+</a>
+	  </div>
+    <div class="w3-container w3-center">
+      <p>Great place to learn Python, Ruby, JavaScript and how to make a website and many more. Kids: this is where adults learn. Tip: start with Python, or start with HTML/CSS and then move on to the JavaScript tutorials. </p>
+    
+      <div class="w3-section">
+        <button class="w3-button w3-green"><a href="https://www.codecademy.com/learn/all" target="_blank">Codeacademy Tutorials</a></button>
+      </div>        
+    </div>
+  </div>
+</div>  
+ 
+ <!-- -->      
+  <div class="w3-container w3-padding-32"><p>Are you ready for more? Try <a href="https://www.freecodecamp.com">FreeCodeCamp</a> or sign up for a computer science, design or coding class at a local college. Definitely find a friend to code with, and let me know how it goes.</a></p>
+    </div>
+    
+  <!-- -->   
+    <div class="high-school w3-container">
+    </div>
+    
+ <!-- -->    
+ 
+</body>
+<!-- footer here.  -->
+<footer class="w3-container w3-indigo w3-padding-32">
+    <div class="w3-container w3-center w3-padding-100">
+      
+      <p id="miriam">CodeStart is created by <a href="https://twitter.com/miriampeskowitz">@miriampeskowitz</a>, New York Times bestselling author of <a href="http://daringbookforgirls.com">The Daring Book for Girls</a> and of an about-to-be-finished new book, Girls + Tech, that's filled to the brim with DIY tech and code projects for girls, and for all beginners everywhere.</p>
+      <p>Happy coding!</p>
+    </div>
+</footer>
+  
+</html>
